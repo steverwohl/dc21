@@ -5,7 +5,7 @@ if [ $? -ne 0 ]; then
   sudo yum install -y expect
 fi
 
-wget https://github.com/IntersectAustralia/steverwohl/blob/master/vm_setup.sh?raw=true -O vm_setup.sh --no-check-certificate
+wget https://github.com/steverwohl/dc21/blob/master/vm_setup.sh?raw=true -O vm_setup.sh --no-check-certificate
 /usr/bin/expect -<<EOD
 set timeout -1
 set already_confirmed_password 0
