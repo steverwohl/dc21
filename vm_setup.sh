@@ -56,7 +56,7 @@ else
 fi
 
 cd $HOME/code_base
-git clone git://github.com/IntersectAustralia/dc21.git
+git clone git://github.com/steverwohl/dc21.git
 cd $HOME/code_base/dc21
 
 # Set up RVM
@@ -97,6 +97,8 @@ git checkout tags/2.3.01
 rvm use 2.0.0-p481@dc21app --create
 
 gem install bundler -v 1.9.4
+gem install pg -v '0.17.1'
+gem install rb-fsevent -v '0.9.4'
 passenger-install-apache2-module
 bundle install
 status=$?
