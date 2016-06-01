@@ -1,10 +1,10 @@
 export DC21_HOST="172.17.0.2" # Host name of this server excluding http://
 export DC21_DB_PWD="dc21" # Database password for the application
 
-export DC21_TAG="2.3.02" # The git tag you wish to deploy. This has been tested with 2.0.01 and above.
+export DC21_TAG="2.3.01" # The git tag you wish to deploy. This has been tested with 2.0.01 and above.
 export DC21_STAGE="production" # The type of server you are deploying. qa/staging/production
-export PASSWORD="password" # The password of this server
-export JOAI="joaipass" # jOAI password (at least six alphanumeric characters)
+export PASSWORD="EcoFun!" # The password of this server
+export JOAI="EcoFun!" # jOAI password (at least six alphanumeric characters)
 
 # The following is for setting up the AAF Rapid Connect variables
 # These will live in dc21app/shared/files/config/aaf_rc.yml
