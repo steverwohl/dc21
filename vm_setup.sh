@@ -93,10 +93,11 @@ if [ $? -ne 0 ]; then
 fi
 
 cd $HOME/code_base/dc21
-git checkout tags/2.3.01
+git checkout tags/$DC21_TAG
 rvm use 2.0.0-p481@dc21app --create
 
 gem install bundler -v 1.9.4
+gem install rb-fsevent -v '0.9.4'
 bundle install
 status=$?
 
