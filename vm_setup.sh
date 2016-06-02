@@ -20,8 +20,6 @@ if [ "$status" -ne 0 ]; then
 fi
 
 #Installs standard RPMs
-sudo rpm -Uvh http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-
 sudo yum install -y gcc gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel unzip libffi-devel openssl openssl-devel make bzip2 autoconf automake libtool bison httpd httpd-devel apr-devel apr-util-devel mod_ssl mod_xsendfile curl curl-devel openssl openssl-devel tzdata libxml2 libxml2-devel libxslt libxslt-devel sqlite-devel git postgresql-server postgresql postgresql-devel
 sudo setenforce 0
 sudo service sshd start
@@ -97,6 +95,7 @@ git checkout tags/$DC21_TAG
 rvm use 2.0.0-p481@dc21app --create
 
 gem install bundler -v 1.9.4
+gem install rb-fsevent -v 0.9.4
 bundle install
 status=$?
 
